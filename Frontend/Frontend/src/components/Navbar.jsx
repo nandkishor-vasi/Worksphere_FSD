@@ -10,13 +10,6 @@ const Navbar = () => {
   const id = user?.id;
   const userRole = user?.role?.toLowerCase(); 
 
-  const handleContactClick = (e) => {
-    e.preventDefault();
-    const contactSection = document.getElementById("contact-section");
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: "smooth" });
-    }
-  };
 
   return (
     <nav className="navbar">

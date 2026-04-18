@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useAuth } from '../context/AuthContext';
-import { TextField, Select, MenuItem, Button, InputLabel, FormControl, FormHelperText } from '@mui/material';
+import { TextField, Select, MenuItem, Button, InputLabel, FormControl } from '@mui/material';
 
 const ActivityForm = ({ adminId, refresh }) => {
   const userData = useAuth();
@@ -34,7 +34,7 @@ const backendBaseUrl = process.env.REACT_APP_BACKEND_BASE_URL;
       }
     };
     fetchProjects();
-  }, [adminId, token]);
+  }, [adminId, token, backendBaseUrl]);
 
   // Fetch members based on the selected project
   useEffect(() => {
@@ -56,7 +56,7 @@ const backendBaseUrl = process.env.REACT_APP_BACKEND_BASE_URL;
     } else {
       setMembers([]); 
     }
-  }, [formData.project, token]);
+  }, [formData.project, token, backendBaseUrl]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;

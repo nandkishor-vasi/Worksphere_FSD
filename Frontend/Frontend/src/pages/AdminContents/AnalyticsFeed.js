@@ -22,7 +22,7 @@ const AnalyticsFeed = () => {
       .then((res) => setProjects(res.data))
       .catch(() => {})
       .finally(() => setLoading(false));
-  }, [token, adminId]);
+  }, [token, adminId, backendBaseUrl]);
 
   return (
     <div style={styles.page}>

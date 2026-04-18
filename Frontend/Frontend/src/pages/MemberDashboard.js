@@ -38,7 +38,7 @@ const TeamMemberDashboard = () => {
         console.error("Dashboard load error:", err);
         setLoading(false);
       });
-  }, [userId, token]);
+  }, [userId, token, backendBaseUrl]);
 
   const handleActivityStatusUpdate = async (activityId, newStatus) => {
     try {
@@ -285,12 +285,6 @@ const IconSettings = () => (
   <svg width="15" height="15" viewBox="0 0 16 16" fill="none">
     <circle cx="8" cy="8" r="2.5" stroke="currentColor" strokeWidth="1.2" opacity=".7" />
     <path d="M8 1v1.5M8 13.5V15M1 8h1.5M13.5 8H15" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" opacity=".4" />
-  </svg>
-);
-const IconBell = () => (
-  <svg width="15" height="15" viewBox="0 0 16 16" fill="none">
-    <path d="M8 1.5A5 5 0 003 6.5v3l-1.5 2H14.5L13 9.5v-3A5 5 0 008 1.5z" stroke="currentColor" strokeWidth="1.2" />
-    <path d="M6.5 13.5a1.5 1.5 0 003 0" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
   </svg>
 );
 

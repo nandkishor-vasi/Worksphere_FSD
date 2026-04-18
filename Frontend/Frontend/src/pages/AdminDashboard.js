@@ -65,7 +65,7 @@ const AdminDashboard = () => {
           { label: "Total Projects", value: totalProjects },
           { label: "Active Tasks", value: activeTasks },
           { label: "Completed Projects", value: completedTasks },
-          { label: "Team Members", value: membersRes.data.length },
+          { label: "Team Members", value: membersList.length },
         ]);
 
         setLoading(false);

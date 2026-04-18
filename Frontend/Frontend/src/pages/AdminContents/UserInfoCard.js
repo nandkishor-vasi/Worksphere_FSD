@@ -1,6 +1,4 @@
 import {
-  Card,
-  CardContent,
   Typography,
   Avatar,
   Box,

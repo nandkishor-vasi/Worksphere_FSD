@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Typography, Box, CircularProgress } from '@mui/material';
+import { Box, CircularProgress } from '@mui/material';
 import { useAuth } from '../../context/AuthContext';
 
 const ActivitiesCountPerProject = ({ projects }) => {
@@ -35,7 +35,7 @@ const ActivitiesCountPerProject = ({ projects }) => {
     if (projects.length > 0) {
       fetchCounts();
     }
-  }, [projects]);
+  }, [projects,backendBaseUrl , token]);
 
   return (
     <div style={styles.wrapper}>

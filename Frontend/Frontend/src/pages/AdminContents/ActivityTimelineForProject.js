@@ -22,7 +22,7 @@ const ProjectTimeline = ({ projectId }) => {
         .catch((err) => console.error("Failed:", err))
         .finally(() => setLoading(false));
     }
-  }, [projectId]);
+  }, [projectId, backendBaseUrl, token]);
 
   return (
     <div style={styles.wrapper}>

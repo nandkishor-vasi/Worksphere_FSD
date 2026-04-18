@@ -3,7 +3,6 @@ import axios from 'axios';
 import ActivityForm from '../components/ActivityForm';
 import ActivityList from '../components/ActivityList';
 import { useAuth } from '../context/AuthContext';
-import { Box, Typography } from '@mui/material';
 
 const ActivityPage = () => {
   const [activities, setActivities] = useState([]);
@@ -27,12 +26,11 @@ const ActivityPage = () => {
 
   useEffect(() => {
     fetchActivities();
-  }, [adminId, token]);
+  }, [adminId, token, fetchActivities]);
 
   return (
     <div style={styles.page}>
 
-      {/* Header */}
       <div style={styles.header}>
         <div>
           <div style={styles.title}>Activities</div>

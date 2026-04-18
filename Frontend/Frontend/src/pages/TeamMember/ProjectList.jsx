@@ -5,8 +5,6 @@ import {
   Typography,
   CircularProgress,
   Chip,
-  LinearProgress,
-  Tooltip,
   Paper,
   Button
 } from "@mui/material";
@@ -55,7 +53,7 @@ const ProjectList = ({ role = "member", projects: externalProjects }) => {
       setError("Failed to load projects.");
       setLoading(false);
     });
-}, [userId, token, role, externalProjects]);
+}, [userId, token, role, externalProjects, backendBaseUrl]);
 
   if (loading) {
     return (

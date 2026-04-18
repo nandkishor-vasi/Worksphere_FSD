@@ -61,7 +61,7 @@ const ActivityList = () => {
     };
 
     fetchActivities();
-  }, [memberId, token]);
+  }, [memberId, token, backendBaseUrl]);
 
   const openEditDialog = (activity) => {
     setSelectedActivity(activity);
