@@ -96,7 +96,7 @@ const Home = () => {
           <p>Address: PCCOE Akurdi, Pune - 44</p>
         </div>
         <p className="copyright">
-          © {new Date().getFullYear()} Retech. All rights reserved.
+          © {new Date().getFullYear()} Worksphere. All rights reserved.
         </p>
       </footer>
     </div>

@@ -5,101 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="297c71b7-ff16-4b23-bfec-d7909f08ac0f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/Worksphere/repo/ActivityRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/Worksphere/repo/AdminRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/Worksphere/repo/MemberRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/Worksphere/repo/ProjectRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/Worksphere/repo/UserRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/Worksphere/service/ActivityService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/Worksphere/service/AdminService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/Worksphere/service/MemberService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/Worksphere/service/ProjectService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PmsBackend" beforeDir="false" afterPath="$PROJECT_DIR$/PmsBackend" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PmsBackend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PmsBackend/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/CepDemo1/CepDemo1Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/Worksphere/CepDemo1Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/CepDemo1/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/Worksphere/Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/CepDemo1/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/Worksphere/CorsConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/CepDemo1/config/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/Worksphere/config/CorsConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/CepDemo1/config/JdbcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/Worksphere/config/JdbcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/CepDemo1/config/JwtFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/Worksphere/config/JwtFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/CepDemo1/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/Worksphere/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/CepDemo1/controller/ActivityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/Worksphere/controller/ActivityController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/CepDemo1/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/Worksphere/controller/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/CepDemo1/controller/AnalyticsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/Worksphere/controller/AnalyticsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/CepDemo1/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/Worksphere/controller/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/CepDemo1/controller/ProjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/Worksphere/controller/ProjectController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/CepDemo1/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/Worksphere/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/CepDemo1/model/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/Worksphere/model/Action.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/CepDemo1/model/ActivityModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/Worksphere/model/ActivityModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/CepDemo1/model/AdminModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/Worksphere/model/AdminModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/CepDemo1/model/MemberModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/Worksphere/model/MemberModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/CepDemo1/model/ProjectModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/Worksphere/model/ProjectModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/CepDemo1/model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/Worksphere/model/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/CepDemo1/model/UserModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/Worksphere/model/UserModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/CepDemo1/model/UserPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/Worksphere/model/UserPrincipal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/CepDemo1/repo/ActivityRepo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/CepDemo1/repo/AdminRepo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/CepDemo1/repo/AnalyticsRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/Worksphere/repo/AnalyticsRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/CepDemo1/repo/MemberRepo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/CepDemo1/repo/ProjectRepo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/CepDemo1/repo/UserRepo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/CepDemo1/service/ActivityService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/CepDemo1/service/AdminService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/CepDemo1/service/AnalyticsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/Worksphere/service/AnalyticsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/CepDemo1/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/Worksphere/service/AuthService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/CepDemo1/service/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/Worksphere/service/JwtService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/CepDemo1/service/MemberService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/CepDemo1/service/MyUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/Worksphere/service/MyUserDetailsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/CepDemo1/service/ProjectService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/CepDemo1/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/PmsBackend/src/main/java/com/example/Worksphere/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PmsBackend/src/main/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/PmsBackend/src/main/resources/schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PmsBackend/src/test/java/com/example/CepDemo1/CepDemo1ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/PmsBackend/src/test/java/com/example/Worksphere/CepDemo1ApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/components/ActivityCard.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/components/ActivityForm.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/components/ActivityList.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/components/AuthPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/components/Navbar.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/components/ProtectedRoute.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/components/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/context/AuthContext.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/pages/About.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/pages/ActivityPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/pages/AdminContents/ActivitiesCountPerProject.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/pages/AdminContents/ActivityTimelineForProject.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/pages/AdminContents/AnalyticsFeed.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/pages/AdminContents/Metrics.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/pages/AdminContents/ProjectSummary.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/pages/AdminContents/Sidebar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/pages/AdminContents/UserInfoCard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/pages/AdminDashboard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/pages/Contact.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/pages/Home.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/pages/MemberDashboard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/reportWebVitals.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/setupTests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/styles/AdminDashboard.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/styles/AuthPage.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/styles/Dashboard.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/styles/DonateDeviceForm.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/styles/Home.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/styles/Navbar.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/styles/Profile.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +29,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "G:/PMSFinal",
+    "last_opened_file_path": "G:/Backup_FSD/Backend/PmsBackend",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0",
