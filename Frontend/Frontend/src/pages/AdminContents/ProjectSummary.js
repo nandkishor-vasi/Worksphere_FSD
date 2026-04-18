@@ -58,7 +58,7 @@ const ProjectSummary = () => {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((res) => setMembersList(res.data));
-  }, [token]);
+  }, [token, backendBaseUrl, userId]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;

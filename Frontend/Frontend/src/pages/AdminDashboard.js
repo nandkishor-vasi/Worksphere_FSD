@@ -19,7 +19,6 @@ const AdminDashboard = () => {
   const [metrics, setMetrics] = useState([]);
   const [activityFeed, setActivityFeed] = useState([]);
   const [projects, setProjects] = useState([]);
-  const [membersList, setMembersList] = useState([]);
   const [loading, setLoading] = useState(true);
 
   
@@ -51,7 +50,6 @@ const AdminDashboard = () => {
         setAdmin(adminRes.data);
         setProjects(projectsRes.data);
         setActivityFeed(activitiesRes.data);
-        setMembersList(membersRes.data);
 
         const totalProjects = projectsRes.data.length;
         const activeTasks = activitiesRes.data.filter(
@@ -65,7 +63,7 @@ const AdminDashboard = () => {
           { label: "Total Projects", value: totalProjects },
           { label: "Active Tasks", value: activeTasks },
           { label: "Completed Projects", value: completedTasks },
-          { label: "Team Members", value: membersList.length },
+          { label: "Team Members", value: membersRes.data.length },
         ]);
 
         setLoading(false);
@@ -74,7 +72,7 @@ const AdminDashboard = () => {
         console.error("Dashboard error:", err);
         setLoading(false);
       });
-  }, [adminId, token]);
+  }, [adminId, token, backendBaseUrl]);
 
   if (loading) {
     return (
