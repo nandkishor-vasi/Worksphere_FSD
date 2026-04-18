@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback  } from 'react';
 import axios from 'axios';
 import ActivityForm from '../components/ActivityForm';
 import ActivityList from '../components/ActivityList';
@@ -11,7 +11,7 @@ const ActivityPage = () => {
   const token = userData?.user?.token;
   const backendBaseUrl = process.env.REACT_APP_BACKEND_BASE_URL;
 
-  const fetchActivities = async () => {
+  const fetchActivities = useCallback(async () => {
     if (!adminId) return;
 
     const res = await axios.get(
@@ -22,7 +22,7 @@ const ActivityPage = () => {
     );
 
     setActivities(res.data);
-  };
+  }, [adminId, token, backendBaseUrl]);
 
   useEffect(() => {
     fetchActivities();
