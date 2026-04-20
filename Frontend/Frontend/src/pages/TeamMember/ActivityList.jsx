@@ -187,7 +187,15 @@ const ActivityList = () => {
 
   return (
     <Box px={2} py={1}>
-      <Typography variant="h6" fontWeight={700} mb={2}>
+      <Typography variant="h6"
+        fontWeight={700}
+        mb={2}
+        sx={{
+          background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+          WebkitBackgroundClip: "text",
+          WebkitTextFillColor: "transparent",
+          ml: 1,
+        }}>
         Assigned Activities
       </Typography>
 
@@ -216,7 +224,7 @@ const ActivityList = () => {
                   </ListItemAvatar>
 
                   <Box ml={2}>
-                    <Typography fontWeight={600} variant="subtitle1">
+                    <Typography fontWeight={600} variant="subtitle1" color="black">
                       {activity.projectTitle || "Untitled Project"}
                     </Typography>
 
