@@ -89,7 +89,39 @@ const Home = () => {
           ))}
         </div>
       </section>
-
+      <section className="section features">
+        <h3 className="title">Key Features</h3>
+        <div className="steps">
+          {[
+            {
+              title: "Real-time Updates",
+              description:
+                "Stay updated with instant changes across your team.",
+            },
+            {
+              title: "Secure Authentication",
+              description:
+                "Your data is protected with role-based access control.",
+            },
+            {
+              title: "Performance Tracking",
+              description:
+                "Analyze progress with dashboards and reports.",
+            },
+          ].map((feature, index) => (
+            <motion.div
+              key={feature.title}
+              className="step"
+              whileHover={{ scale: 1.05 }}
+              onClick={handleRedirect}
+            >
+              <div className="step-number">{index + 1}</div>
+              <h4>{feature.title}</h4>
+              <p>{feature.description}</p>
+            </motion.div>
+          ))}
+        </div>
+      </section>
       <footer id="contact-section" className="footer">
         <div className="contact-info">
           <h3>Contact Us</h3>
