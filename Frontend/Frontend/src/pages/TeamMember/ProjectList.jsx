@@ -71,13 +71,50 @@ const ProjectList = ({ role = "member", projects: externalProjects }) => {
     );
   }
 
-  if (!projects || projects.length === 0) {
-    return (
-      <Typography variant="body1" color="text.secondary" textAlign="center" sx={{ py: 3 }}>
-        No projects assigned yet.
+ if (!projects || projects.length === 0)
+  return (
+    <Box
+      display="flex"
+      flexDirection="column"
+      alignItems="center"
+      justifyContent="center"
+      mt={8}
+      textAlign="center"
+    >
+      <Avatar
+        sx={{
+          bgcolor: "#e0e7ff",
+          width: 80,
+          height: 80,
+          mb: 2,
+        }}
+      >
+        <AssignmentIcon sx={{ fontSize: 40, color: "#4f46e5" }} />
+      </Avatar>
+
+      <Typography variant="h6" fontWeight={600}>
+        No Activities Yet
       </Typography>
-    );
-  }
+
+      <Typography
+        variant="body2"
+        color="text.secondary"
+        mt={1}
+        maxWidth={300}
+      >
+        You don’t have any assigned projects right now. Once something is
+        assigned, it will appear here.
+      </Typography>
+
+      <Button
+        variant="contained"
+        sx={{ mt: 3 }}
+        onClick={() => window.location.reload()}
+      >
+        Refresh
+      </Button>
+    </Box>
+  );
 
    const columns = [
     {

@@ -140,11 +140,50 @@ const ActivityList = () => {
     );
 
   if (!activities || activities.length === 0)
-    return (
-      <Typography variant="body1" color="text.secondary">
-        No activities assigned yet.
+  return (
+    <Box
+      display="flex"
+      flexDirection="column"
+      alignItems="center"
+      justifyContent="center"
+      mt={8}
+      textAlign="center"
+    >
+      <Avatar
+        sx={{
+          bgcolor: "#e0e7ff",
+          width: 80,
+          height: 80,
+          mb: 2,
+        }}
+      >
+        <AssignmentIcon sx={{ fontSize: 40, color: "#4f46e5" }} />
+      </Avatar>
+
+      <Typography variant="h6" fontWeight={600}>
+        No Activities Yet
       </Typography>
-    );
+
+      <Typography
+        variant="body2"
+        color="text.secondary"
+        mt={1}
+        maxWidth={300}
+      >
+        You don’t have any assigned activities right now. Once something is
+        assigned, it will appear here.
+      </Typography>
+
+      {/* Optional CTA */}
+      <Button
+        variant="contained"
+        sx={{ mt: 3 }}
+        onClick={() => window.location.reload()}
+      >
+        Refresh
+      </Button>
+    </Box>
+  );
 
   return (
     <Box px={2} py={1}>
