@@ -63,17 +63,17 @@ const Home = () => {
             {
               title: "Create & Manage Projects",
               description:
-                "As a Admin you have the ability to create new projects, set up team structures, and define clear goals and milestones.",
+                "As an Admin you have the ability to create new projects, set up team structures, and define clear goals and milestones.",
             },
             {
               title: "Join a Project",
               description:
-                "As a member, you’ll receive an invitation to join a project. Upon joining, you’ll be able to see the project’s objectives, your assigned tasks, and the overall timeline. ",
+                "As a member, you'll receive an invitation to join a project. You'll see objectives, assigned tasks, and the overall timeline.",
             },
             {
               title: "Assign Tasks",
               description:
-                "Admins have full visibility of task completion, ensuring projects stay on track. ",
+                "Admins have full visibility of task completion, ensuring projects stay on track and deadlines are met.",
             },
           ].map((step, index) => (
             <motion.div
@@ -82,6 +82,7 @@ const Home = () => {
               whileHover={{ scale: 1.05 }}
               onClick={handleRedirect}
             >
+              <div className="step-number">{index + 1}</div>
               <h4>{step.title}</h4>
               <p>{step.description}</p>
             </motion.div>

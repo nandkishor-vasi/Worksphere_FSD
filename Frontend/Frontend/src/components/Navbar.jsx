@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import "../styles/Navbar.css";
-import logo from "./logo.png"; 
+const logo = process.env.PUBLIC_URL + "/logo.png";
 
 
 const Navbar = () => {
