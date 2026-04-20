@@ -112,6 +112,8 @@ const ProjectList = ({ role = "member", projects: externalProjects }) => {
               ? "In Progress"
               : params.value === "COMPLETED"
               ? "Completed"
+              : params.value === "NOT_STARTED"
+              ? "Not Started"
               : "Pending"
           }
           color={
@@ -119,6 +121,8 @@ const ProjectList = ({ role = "member", projects: externalProjects }) => {
               ? "success"
               : params.value === "IN_PROGRESS"
               ? "primary"
+              : params.value === "NOT_STARTED"
+              ? "default"
               : "default"
           }
           size="small"
